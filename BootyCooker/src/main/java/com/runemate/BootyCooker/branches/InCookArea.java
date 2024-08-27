@@ -1,6 +1,6 @@
-﻿package com.runemate.BootyCooker;
-import com.runemate.BootyCooker.branches.IsFoodCooked;
-import com.runemate.BootyCooker.enums.PolygonAreas;
+﻿package com.runemate.BootyCooker.branches;
+
+import com.runemate.BootyCooker.leafs.WalkToCookArea;
 import com.runemate.game.api.hybrid.entities.Player;
 import com.runemate.game.api.hybrid.location.Area;
 import com.runemate.game.api.hybrid.location.Coordinate;
@@ -8,30 +8,26 @@ import com.runemate.game.api.hybrid.region.Players;
 import com.runemate.game.api.script.framework.tree.BranchTask;
 import com.runemate.game.api.script.framework.tree.TreeTask;
 
-/**
- * NOTES:
- * Checks if we are in the thieves den
- * **/
+public class InCookArea extends BranchTask {
 
-public class InThievesDen extends BranchTask {
-
-    private static final Area.Polygonal CookArea = PolygonAreas.ROGUES_DEN.getArea();
-    IsFoodCooked isFoodCooked = new IsFoodCooked();
-
+    private Area cookArea = new Area.Rectangular(new Coordinate(3040,4975,1), new Coordinate(3047,4969, 1));
     private Player player;
+    private WalkToCookArea walkToCookArea = new WalkToCookArea();
 
     @Override
     public boolean validate() {
-        return (player = Players.getLocal()) != null && CookArea.contains(player);
+        return (player = Players.getLocal()) != null && cookArea.contains(player);
     }
 
     @Override
     public TreeTask successTask() {
-        return isFoodCooked;
+        // Is Bank Open
+        return null;
     }
 
     @Override
     public TreeTask failureTask() {
-        return null;
+        // Walk to cook area
+        return walkToCookArea;
     }
 }

@@ -7,6 +7,7 @@ public class BootyCooker extends TreeBot {
 
     @Override
     public TreeTask createRootTask() {
-        return new InThievesDen();
+        return new InThievesDenEntrance();
     }
+
 }
