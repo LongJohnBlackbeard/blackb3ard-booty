@@ -1,13 +1,13 @@
 package com.runemate.BootyCooker.leafs;
 
-import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;
+import com.runemate.game.api.hybrid.region.Npcs;
 import com.runemate.game.api.script.Execution;
 import com.runemate.game.api.script.framework.tree.LeafTask;
 
-public class WithdrawGauntlets extends LeafTask {
-
+public class OpenBank extends LeafTask {
     @Override
     public void execute() {
-        Bank.withdraw("Cooking gauntlets", 1);
+        var banker = Npcs.getLoaded("Emerald Benedict").first();
+        banker.interact("Bank");
     }
 }

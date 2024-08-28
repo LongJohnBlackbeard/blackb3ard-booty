@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.leafs;
+package com.runemate.BootyCooker.leafs;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;
@@ -8,8 +8,9 @@ import com.runemate.ui.setting.annotation.open.SettingsProvider;
 import lombok.Getter;
 
 public class DepositCooked extends LeafTask {
+
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override

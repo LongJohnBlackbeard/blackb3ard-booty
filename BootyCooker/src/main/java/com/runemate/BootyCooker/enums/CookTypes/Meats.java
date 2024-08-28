@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.enums.CookTypes;
+package com.runemate.BootyCooker.enums.CookTypes;
 
 
 import lombok.Getter;

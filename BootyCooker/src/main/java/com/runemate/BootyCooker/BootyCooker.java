@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker;
+package com.runemate.BootyCooker;
 
 import com.runemate.game.api.script.framework.tree.TreeBot;
 import com.runemate.game.api.script.framework.tree.TreeTask;

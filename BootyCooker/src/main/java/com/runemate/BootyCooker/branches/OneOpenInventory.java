@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.leafs.DepositAll;
 import com.runemate.BootyCooker.leafs.WithdrawGauntlets;
@@ -9,6 +9,7 @@ import com.runemate.game.api.script.framework.tree.TreeTask;
 public class OneOpenInventory extends BranchTask {
     private IsGauntletsInBank isGauntletsInBank = new IsGauntletsInBank();
     private DepositAll depositAll = new DepositAll();
+
     @Override
     public boolean validate() {
         return !Inventory.isFull();

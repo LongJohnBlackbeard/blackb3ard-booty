@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker;
+package com.runemate.BootyCooker;
 import com.runemate.BootyCooker.branches.InRoguesDen;
 import com.runemate.BootyCooker.branches.IsRoguesDoorOpen;
 import com.runemate.BootyCooker.enums.PolygonAreas;

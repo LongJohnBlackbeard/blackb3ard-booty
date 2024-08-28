@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Equipment;
@@ -9,8 +9,12 @@ import com.runemate.ui.setting.annotation.open.SettingsProvider;
 import lombok.Getter;
 
 public class IsGauntletEquipped extends BranchTask {
+
+    private BankerNearby bankerNearby = new BankerNearby();
+    private AreWeCooking areWeCooking = new AreWeCooking();
+
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override
@@ -26,11 +30,12 @@ public class IsGauntletEquipped extends BranchTask {
 
     @Override
     public TreeTask successTask() {
-        return null;
+        return areWeCooking;
     }
 
     @Override
     public TreeTask failureTask() {
-        return null;
+        // Open Bank
+        return bankerNearby;
     }
 }

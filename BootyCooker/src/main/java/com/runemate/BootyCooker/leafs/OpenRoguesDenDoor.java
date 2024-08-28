@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.leafs;
+package com.runemate.BootyCooker.leafs;
 
 import com.runemate.game.api.hybrid.Environment;
 import com.runemate.game.api.hybrid.entities.GameObject;

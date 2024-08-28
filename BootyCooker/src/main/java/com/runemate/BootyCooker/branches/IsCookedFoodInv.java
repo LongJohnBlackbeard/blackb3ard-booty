@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.BootyCooker.leafs.DepositCooked;
@@ -14,7 +14,7 @@ public class IsCookedFoodInv extends BranchTask {
     private IsBurntFoodInv isBurntFoodInv = new IsBurntFoodInv();
 
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override

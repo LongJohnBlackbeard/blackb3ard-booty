@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.enums;
+package com.runemate.BootyCooker.enums;
 
 import com.runemate.game.api.hybrid.location.Area;
 import com.runemate.game.api.hybrid.location.Coordinate;

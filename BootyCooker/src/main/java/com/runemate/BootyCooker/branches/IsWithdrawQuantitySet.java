@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.leafs.SetDefaultQuantity;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;

@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.leafs;
+package com.runemate.BootyCooker.leafs;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.game.api.hybrid.local.hud.interfaces.Bank;
@@ -10,7 +10,7 @@ import lombok.Getter;
 public class DepositBurnt extends LeafTask {
 
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override

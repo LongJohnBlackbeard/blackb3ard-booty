@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.leafs.WalkToCookArea;
 import com.runemate.game.api.hybrid.entities.Player;
@@ -13,6 +13,7 @@ public class InCookArea extends BranchTask {
     private Area cookArea = new Area.Rectangular(new Coordinate(3040,4975,1), new Coordinate(3047,4969, 1));
     private Player player;
     private WalkToCookArea walkToCookArea = new WalkToCookArea();
+    private IsRequirementsMet requirementsMet = new IsRequirementsMet();
 
     @Override
     public boolean validate() {
@@ -21,8 +22,7 @@ public class InCookArea extends BranchTask {
 
     @Override
     public TreeTask successTask() {
-        // Is Bank Open
-        return null;
+        return requirementsMet;
     }
 
     @Override

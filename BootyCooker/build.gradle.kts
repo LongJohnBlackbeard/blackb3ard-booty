@@ -4,8 +4,8 @@ import java.time.Duration
 runemate {
     manifests {
         create("BootyCooker") {
-            mainClass = "com.runemate.blackb3ard-booty.BootyCooker"
-            tagline = "Cooking)"
+            mainClass = "com.runemate.BootyCooker.BootyCooker"
+            tagline = "Cooking"
             description = "Simple Thieves Den Cooker"
             version = "1.0"
             internalId = "booty-cooker-1"

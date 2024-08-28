@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.leafs;
+package com.runemate.BootyCooker.leafs;
 
 import com.runemate.game.api.hybrid.location.Area;
 import com.runemate.game.api.hybrid.location.Coordinate;

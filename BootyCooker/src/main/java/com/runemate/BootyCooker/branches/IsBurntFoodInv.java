@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.BootyCooker.leafs.DepositBurnt;
@@ -13,7 +13,7 @@ public class IsBurntFoodInv extends BranchTask {
     private DepositBurnt depositBurnt = new DepositBurnt();
 
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override

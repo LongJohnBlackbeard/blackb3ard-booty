@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.BootyCooker.leafs.Stop;
@@ -17,7 +17,7 @@ public class HaveRawFoodInBank extends BranchTask {
 
 
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     @Override

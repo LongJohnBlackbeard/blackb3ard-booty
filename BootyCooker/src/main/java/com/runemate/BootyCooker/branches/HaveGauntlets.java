@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.branches;
+package com.runemate.BootyCooker.branches;
 
 import com.runemate.BootyCooker.enums.Config;
 import com.runemate.BootyCooker.leafs.DepositAll;
@@ -14,7 +14,7 @@ public class HaveGauntlets extends BranchTask {
     private HaveRawFoodInv haveRawFoodInv = new HaveRawFoodInv();
 
     @Getter
-    @SettingsProvider
+    @SettingsProvider(updatable = true)
     private Config config;
 
     private DepositAll depositAll = new DepositAll();

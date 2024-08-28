@@ -1,4 +1,4 @@
-﻿package com.runemate.BootyCooker.enums;
+package com.runemate.BootyCooker.enums;
 
 import com.runemate.BootyCooker.enums.CookTypes.CookTypes;
 import com.runemate.BootyCooker.enums.CookTypes.Meats;
